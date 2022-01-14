@@ -22,7 +22,7 @@ namespace Gabriel
                 try
                 {
                     var context = services.GetRequiredService<DatabaseContext>();
-                    await context.Database.MigrateAsync();
+                    //await context.Database.MigrateAsync();
                     //await Seeder.DbInitializer(context, loggerFactory);
                 }
                 catch (Exception ex)
