@@ -1,0 +1,73 @@
+﻿
+
+@*@{ 
+    Layout = null;
+}
+
+*@
+
+
+@{ 
+    ViewData["Title"] = "Login";
+    LoginViewModel loginModel = new LoginViewModel();
+}
+
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Gabriel Adedeji</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/audioplayer.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+    <!-- header-start -->
+    
+    <div class="card" style="height:70vh">
+        <div class="card-body">
+            <h1>Login to Dashboard</h1>
+            <form asp-controller="Auth" asp-action="Login" class="d-flex flex-column p-2 justify-content-center offset-2 col-8 h-100 " method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input class="col-12  form-control " name="username" placeholder="examle@gmail.com"  asp-for=@loginModel.UserName required/>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input class="col-12  form-control" type="password" name="password" asp-for=@loginModel.Password requied/>
+                </div>
+
+                <button class="btn btn-primary btn-block" type="submit" style="width: 100%;">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

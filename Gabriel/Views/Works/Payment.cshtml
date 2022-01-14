@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Payment";
+    PaymentViewModel paymentmodel = new PaymentViewModel();
+    var error = ViewData["error"] as string;
+
+}
+
+<div class="d-flex justify-content-center align-item-center" style="height: 80vh;">
+    <div class="card" style="width: 24rem;">
+        <div class="card-body">
+            <h3 class="card-title text-center">Enter Details Here</h3>
+            
+                @if(!string.IsNullOrEmpty(error))
+                {
+                    <div class="alert alert-danger">@error</div>
+                }
+           
+            
+            <form method="post" asp-controller="Works" asp-action="Payment">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" asp-for=@paymentmodel.Name name="name" id="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" asp-for=@paymentmodel.Email name="email" id="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="name">Price</label>
+                    <input type="text" class="form-control" asp-for=@paymentmodel.Price name="price" id="price" disabled value=N2000 required />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Proceed</button>
+            </form>
+        </div>
+    </div>
+</div>
