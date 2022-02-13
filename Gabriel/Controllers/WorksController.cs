@@ -52,7 +52,8 @@ namespace Gabriel.Controllers
                 Email = "gab@gmail.com",
                 Reference = Generate().ToString(),
                 Currency = "NGN",
-                CallbackUrl = "http://localhost:26283/works/verify",
+                CallbackUrl = "http://gabrieladedeji.herokuapp.com/works/verify",
+                //CallbackUrl = "http://localhost:26283/works/verify",
             };
 
             TransactionInitializeResponse response = PayStack.Transactions.Initialize(request);

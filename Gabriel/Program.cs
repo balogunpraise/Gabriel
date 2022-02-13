@@ -11,26 +11,26 @@ namespace Gabriel
 {
     public class Program
     {
-        public static async Task Main(string[] args)
+        public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
-            using (var scope = host.Services.CreateScope())
-            {
-                var services = scope.ServiceProvider;
-                var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+            //using (var scope = host.Services.CreateScope())
+            //{
+            //    var services = scope.ServiceProvider;
+            //    var loggerFactory = services.GetRequiredService<ILoggerFactory>();
 
-                try
-                {
-                    var context = services.GetRequiredService<DatabaseContext>();
-                    await context.Database.MigrateAsync();
-                    //await Seeder.DbInitializer(context, loggerFactory);
-                }
-                catch (Exception ex)
-                {
-                    var logger = loggerFactory.CreateLogger<Program>();
-                    logger.LogError(ex, "An error occured on migration");
-                }
-            }
+            //    try
+            //    {
+            //        var context = services.GetRequiredService<DatabaseContext>();
+            //        await context.Database.MigrateAsync();
+            //        //await Seeder.DbInitializer(context, loggerFactory);
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        var logger = loggerFactory.CreateLogger<Program>();
+            //        logger.LogError(ex, "An error occured on migration");
+            //    }
+            //}
             host.Run();
         }
 
