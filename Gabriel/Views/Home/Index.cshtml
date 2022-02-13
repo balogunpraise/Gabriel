@@ -108,8 +108,9 @@
                         <div class="col-xl-9 col-md-9">
                             <div class="music_field">
                                 <div class="thumb">
-                                    <img src="https://yt3.ggpht.com/ytc/AKedOLRYz0LxF7_aAZ3R4tiHcSdZ2CE8NeNvGE1PQl76qQ=s176-c-k-c0x00ffffff-no-rj-mo"
-                                         height="140" width="140" alt="">
+                                    @*<img src="https://yt3.ggpht.com/ytc/AKedOLRYz0LxF7_aAZ3R4tiHcSdZ2CE8NeNvGE1PQl76qQ=s176-c-k-c0x00ffffff-no-rj-mo"
+                                         height="140" width="140" alt="">*@
+                                    <img src="~/img/gab2.jpg" height="140" width="140"/>
                                 </div>
                                 <div class="audio_name">
                                     <div class="name">
@@ -253,9 +254,10 @@
                                             <h4>@item.Name (@item.Description)</h4>
                                             <p>@item.Composer</p>
                                         </div>
-                                        <a href=@item.Url>
-                                            <audio preload="auto" controls controlsList="nodownload">
-                                                <source src="https://drive.google.com/file/d/13KxqnmtxKKq6_au1nUZxYhNFLvgRQsFV/view?usp=drivesdk">
+                                        <a>
+                                            <audio preload="auto" controls">
+                                                <source src="https://www.w3schools.com/html/horse.mp3">
+                                                @*<source src ="https://drive.google.com/u/0/uc?id=13KxqnmtxKKq6_au1nUZxYhNFLvgRQsFV&export=download" />*@
                                             </audio>
                                         </a>
                                     </div>
@@ -264,7 +266,7 @@
                             </div>
                             <div class="col-xl-3 col-md-3">
                                 <div class="music_btn">
-                                    <a asp-action="Payment" asp-controller="Works" class="boxed-btn">buy piece</a>
+                                    <a asp-route-id="@item.Id" asp-controller="Works" asp-action="Payment" class="boxed-btn">buy piece</a>
                                 </div>
                             </div>
                         </div>
