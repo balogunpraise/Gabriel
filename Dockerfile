@@ -19,6 +19,6 @@ RUN dotnet publish "Gabriel.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Gabriel.dll"]
+#ENTRYPOINT ["dotnet", "Gabriel.dll"]
 
 CMD ASPNETCORE_URLS=http://*:$PORT dotnet Gabriel.dll
