@@ -49,7 +49,7 @@ namespace Gabriel.Controllers
             TransactionInitializeRequest request = new()
             {
                 AmountInKobo = work.Price * 100,
-                Email = "balogunpraise2@gmail.com",
+                Email = "gab@gmail.com",
                 Reference = Generate().ToString(),
                 Currency = "NGN",
                 CallbackUrl = "http://localhost:26283/works/verify",
@@ -62,7 +62,7 @@ namespace Gabriel.Controllers
                 {
                     Name = work.Name,
                     Amount = work.Price,
-                    //Email = work.Email,
+                    //Email = work.Email
                     TrxRef = request.Reference
 
                 };
@@ -72,7 +72,6 @@ namespace Gabriel.Controllers
                 return Redirect(response.Data.AuthorizationUrl);
             }
             ViewData["error"] = response.Message;
-
             return RedirectToAction("Payment");
         }
 
@@ -90,7 +89,8 @@ namespace Gabriel.Controllers
                     transaction.Status = true;
                     _context.Transactions.Update(transaction);
                     await _context.SaveChangesAsync();
-                    //return Redirect("https://drive.google.com/file/d/1qALHqXVEt2MTjB0XbJy5-B0wq3-RsT1C/view?ts=61a99582");
+                //return Redirect("https://drive.google.com/file/d/1qALHqXVEt2MTjB0XbJy5-B0wq3-RsT1C/view?ts=61a99582");
+                //https://drive.google.com/u/0/uc?id=1qALHqXVEt2MTjB0XbJy5-B0wq3-RsT1C&export=download
                     return Redirect(mod);
                 }
             }
