@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Payment";
     PaymentViewModel paymentmodel = new PaymentViewModel();
+    Sheet sheet = new Sheet();
     var error = ViewData["error"] as string;
 
 }
@@ -27,7 +28,7 @@
                 </div>
                 <div class="form-group">
                     <label for="name">Price</label>
-                    <input type="text" class="form-control" asp-for=@paymentmodel.Price name="price" id="price" disabled value=N2000 required />
+                    <input type="text" class="form-control" asp-for=@paymentmodel.Price name="price" id="price" disabled value=@sheet.Price required />
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Proceed</button>
             </form>

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel\\Gabriel.csproj": {}
+    "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel\\Gabriel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Data\\Gabriel.Data.csproj": {
+    "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Data\\Gabriel.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Data\\Gabriel.Data.csproj",
+        "projectUniqueName": "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Data\\Gabriel.Data.csproj",
         "projectName": "Gabriel.Data",
-        "projectPath": "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Data\\Gabriel.Data.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Data\\obj\\",
+        "projectPath": "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Data\\Gabriel.Data.csproj",
+        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -34,8 +34,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Models\\Gabriel.Models.csproj": {
-                "projectPath": "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Models\\Gabriel.Models.csproj"
+              "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Models\\Gabriel.Models.csproj": {
+                "projectPath": "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Models\\Gabriel.Models.csproj"
               }
             }
           }
@@ -78,25 +78,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Models\\Gabriel.Models.csproj": {
+    "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Models\\Gabriel.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Models\\Gabriel.Models.csproj",
+        "projectUniqueName": "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Models\\Gabriel.Models.csproj",
         "projectName": "Gabriel.Models",
-        "projectPath": "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Models\\Gabriel.Models.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Models\\obj\\",
+        "projectPath": "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Models\\Gabriel.Models.csproj",
+        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -144,25 +144,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel\\Gabriel.csproj": {
+    "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel\\Gabriel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel\\Gabriel.csproj",
+        "projectUniqueName": "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel\\Gabriel.csproj",
         "projectName": "Gabriel",
-        "projectPath": "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel\\Gabriel.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel\\obj\\",
+        "projectPath": "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel\\Gabriel.csproj",
+        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -178,8 +178,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Data\\Gabriel.Data.csproj": {
-                "projectPath": "C:\\Users\\hp\\Downloads\\Gabriel\\Gabriel\\Gabriel.Data\\Gabriel.Data.csproj"
+              "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Data\\Gabriel.Data.csproj": {
+                "projectPath": "C:\\Users\\David\\Desktop\\Gabriel\\Gabriel.Data\\Gabriel.Data.csproj"
               }
             }
           }
@@ -253,7 +253,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

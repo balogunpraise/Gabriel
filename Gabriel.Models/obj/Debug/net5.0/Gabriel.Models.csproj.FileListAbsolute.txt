@@ -21,3 +21,15 @@ C:\Users\hp\Downloads\Gabriel\Gabriel\Gabriel.Models\obj\Debug\net5.0\Gabriel.Mo
 C:\Users\hp\Downloads\Gabriel\Gabriel\Gabriel.Models\obj\Debug\net5.0\Gabriel.Models.dll
 C:\Users\hp\Downloads\Gabriel\Gabriel\Gabriel.Models\obj\Debug\net5.0\ref\Gabriel.Models.dll
 C:\Users\hp\Downloads\Gabriel\Gabriel\Gabriel.Models\obj\Debug\net5.0\Gabriel.Models.pdb
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\bin\Debug\net5.0\Gabriel.Models.deps.json
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\bin\Debug\net5.0\Gabriel.Models.dll
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\bin\Debug\net5.0\ref\Gabriel.Models.dll
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\bin\Debug\net5.0\Gabriel.Models.pdb
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\obj\Debug\net5.0\Gabriel.Models.csproj.AssemblyReference.cache
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\obj\Debug\net5.0\Gabriel.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\obj\Debug\net5.0\Gabriel.Models.AssemblyInfoInputs.cache
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\obj\Debug\net5.0\Gabriel.Models.AssemblyInfo.cs
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\obj\Debug\net5.0\Gabriel.Models.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\obj\Debug\net5.0\Gabriel.Models.dll
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\obj\Debug\net5.0\ref\Gabriel.Models.dll
+C:\Users\David\Desktop\Gabriel\Gabriel.Models\obj\Debug\net5.0\Gabriel.Models.pdb

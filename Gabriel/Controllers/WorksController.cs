@@ -1,6 +1,7 @@
 ﻿using Gabriel.Data;
 using Gabriel.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using PayStack.Net;
 using System;
@@ -16,6 +17,8 @@ namespace Gabriel.Controllers
         private readonly DatabaseContext _context;
         private readonly string Token;
         private PayStackApi PayStack { get; set; }
+
+        private static string mod;
 
 
         public WorksController(IConfiguration configuraion, DatabaseContext context)
@@ -38,14 +41,15 @@ namespace Gabriel.Controllers
         }
 
 
-        [HttpPost]
-        public async Task<IActionResult> Payment(PaymentViewModel model)
+        [HttpGet("buy-work/{id}")]
+        public async Task<IActionResult> Payment(int id)
         {
-
+            var work = await _context.Sheets.Where(x => x.Id == id).FirstOrDefaultAsync();
+            mod = work.Url;
             TransactionInitializeRequest request = new()
             {
-                AmountInKobo = model.Price * 100,
-                Email = model.Email,
+                AmountInKobo = work.Price * 100,
+                Email = "balogunpraise2@gmail.com",
                 Reference = Generate().ToString(),
                 Currency = "NGN",
                 CallbackUrl = "http://localhost:26283/works/verify",
@@ -56,9 +60,9 @@ namespace Gabriel.Controllers
             {
                 var transaction = new TransactionModel
                 {
-                    Name = model.Name,
-                    Amount = model.Price,
-                    Email = model.Email,
+                    Name = work.Name,
+                    Amount = work.Price,
+                    //Email = work.Email,
                     TrxRef = request.Reference
 
                 };
@@ -74,7 +78,7 @@ namespace Gabriel.Controllers
 
 
 
-
+        [HttpGet]
         public async Task<IActionResult> Verify(string reference)
         {
             TransactionVerifyResponse response = PayStack.Transactions.Verify(reference);
@@ -86,7 +90,8 @@ namespace Gabriel.Controllers
                     transaction.Status = true;
                     _context.Transactions.Update(transaction);
                     await _context.SaveChangesAsync();
-                    return Redirect("https://drive.google.com/file/d/1qALHqXVEt2MTjB0XbJy5-B0wq3-RsT1C/view?ts=61a99582");
+                    //return Redirect("https://drive.google.com/file/d/1qALHqXVEt2MTjB0XbJy5-B0wq3-RsT1C/view?ts=61a99582");
+                    return Redirect(mod);
                 }
             }
             ViewData["error"] = response.Data.GatewayResponse;
