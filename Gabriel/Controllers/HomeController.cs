@@ -9,16 +9,10 @@ namespace Gabriel.Controllers
 {
     public class HomeController : Controller
     {
-        //private readonly ILogger<HomeController> _logger;
-
-        /*public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }*/
-        private readonly DatabaseContext context;
+        private readonly DatabaseContext _context;
         public HomeController(DatabaseContext context)
         {
-            this.context = context;
+            _context = context;
         }
 
 
@@ -26,7 +20,7 @@ namespace Gabriel.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var items = context.Sheets.ToList();
+            var items = _context.Sheets.ToList();
             ViewData["Items"] = items;
             return View();
         }
