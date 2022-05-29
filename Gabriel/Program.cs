@@ -13,22 +13,22 @@ namespace Gabriel
     {
         public static async Task Main(string[] args)
         {
-            var host = CreateHostBuilder(args).Build();
-            using (var scope = host.Services.CreateScope())
+            var host =  CreateHostBuilder(args).Build();
+            using (var scope =  host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-                var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+                var loggerFactory =  services.GetRequiredService<ILoggerFactory>();
 
                 try
                 {
                     var context = services.GetRequiredService<DatabaseContext>();
-                    //await context.Database.MigrateAsync();
-                    //await Seeder.DbInitializer(context, loggerFactory);
+                    await context.Database.MigrateAsync();
+                    await Seeder.DbInitializer(context, loggerFactory);
                 }
                 catch (Exception ex)
                 {
                     var logger = loggerFactory.CreateLogger<Program>();
-                    logger.LogError(ex, "An error occured on migration");
+                    logger.LogError(ex, "An error occurred on migration");
                 }
             }
             host.Run();

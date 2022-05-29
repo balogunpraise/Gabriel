@@ -18,7 +18,7 @@ namespace Gabriel.Controllers
         private readonly string Token;
         private PayStackApi PayStack { get; set; }
 
-        private static string mod;
+        private static string _mod;
 
 
         public WorksController(IConfiguration configuraion, DatabaseContext context)
@@ -45,7 +45,7 @@ namespace Gabriel.Controllers
         public async Task<IActionResult> Payment(int id)
         {
             var work = await _context.Sheets.Where(x => x.Id == id).FirstOrDefaultAsync();
-            mod = work.Url;
+            _mod = work.Url;
             TransactionInitializeRequest request = new()
             {
                 AmountInKobo = work.Price * 100,
@@ -64,7 +64,6 @@ namespace Gabriel.Controllers
                     Amount = work.Price,
                     //Email = work.Email
                     TrxRef = request.Reference
-
                 };
 
                 await _context.Transactions.AddAsync(transaction);
@@ -91,11 +90,11 @@ namespace Gabriel.Controllers
                     await _context.SaveChangesAsync();
                 //return Redirect("https://drive.google.com/file/d/1qALHqXVEt2MTjB0XbJy5-B0wq3-RsT1C/view?ts=61a99582");
                 //https://drive.google.com/u/0/uc?id=1qALHqXVEt2MTjB0XbJy5-B0wq3-RsT1C&export=download
-                    return Redirect(mod);
+                    return Redirect(_mod);
                 }
             }
             ViewData["error"] = response.Data.GatewayResponse;
-            return View("");
+            return View();
         }
 
 
