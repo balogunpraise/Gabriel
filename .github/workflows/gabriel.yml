@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Deploying Gabriel website project
       env:
-        HEROKU_API_KEY: 231e3ae7-32d2-48fd-bc10-526f1dc4367c
+        HEROKU_API_KEY: 516a27fd-3e98-4dc1-a149-a39d9c0d6b61
         APP_NAME: gabrieladedeji
       run: |
         docker build -t gabrieladedeji .
